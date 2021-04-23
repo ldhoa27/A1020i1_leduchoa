@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+        <label for="areaSquare">Meter :</label><input type="text" size="10px" id="areaSquare">
+        <input type="button" value="Calculate" onclick="areaSquare()">
+        <p id="result3">Result :</p>
+        <script>
+            function areaSquare() {
+                let a = document.getElementById("areaSquare").value;
+                let res = document.getElementById("result3");
+                if (isNaN(a)) {
+                    res.innerHTML = `Input must be a number.`
+                } else {
+                    res.innerHTML =  `Result : ${a*a} m²`
+                }
+            }
+        </script>
+</body>
+</html>

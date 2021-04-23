@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let arrayNumber = [1,2,3,4,5,6,7,8,9,10];
+        let input = parseInt(prompt());
+        let i=0; statusCheck = false;
+        for (i=0; i<arrayNumber.length; i++){
+            if(input === arrayNumber[i]){
+                statusCheck = true;
+                break;
+            }
+        }
+        for (let j=i; j<arrayNumber.length-1; j++){
+            arrayNumber[j] = arrayNumber[j+1];
+        }
+        arrayNumber[arrayNumber.length-1] = 0;
+        console.log(arrayNumber);
+    </script>
+</body>
+</html>

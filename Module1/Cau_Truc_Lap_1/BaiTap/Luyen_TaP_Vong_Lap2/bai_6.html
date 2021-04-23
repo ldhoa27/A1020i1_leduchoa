@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #heart_left_above, #heart_right_above, #under{
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        #heart_right_above{
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        table{
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+        <table>
+            <tr>
+                <td><p id="heart_left_above"></p></td>
+                <td><p id="heart_right_above"></p></td>
+            </tr>
+            <tr>
+                <td colspan="2"><p id="under" style="text-align: center"></p></td>
+            </tr>
+
+        </table>
+        <script>
+            let heart_width = parseInt(prompt('Nhap do rong cua trai tim'));
+            let i,j,z,x;
+            let print_out_top='';
+            let print_out_bottom ='';
+
+            for (i = 1; i <= Math.floor(heart_width / 2); i++) {
+                for (j = 1; j <= i; j++) {
+                    print_out_top = print_out_top + '***';
+                }
+                print_out_top=print_out_top+'<br>';
+            }
+            document.getElementById("heart_left_above").innerHTML = print_out_top;
+            document.getElementById('heart_right_above').innerHTML= print_out_top;
+            //
+            for (x=heart_width; x >=1; x--) {
+                for (z = 1; z <= x; z++) {
+                    print_out_bottom = print_out_bottom + '***';
+                }
+                print_out_bottom=print_out_bottom+'<br>';
+            }
+            document.getElementById('under').innerHTML=print_out_bottom;
+        </script>
+
+</body>
+</html>

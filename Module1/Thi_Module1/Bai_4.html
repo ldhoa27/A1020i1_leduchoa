@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai4</title>
+</head>
+<body>
+<input type="button" value="Thêm mới KH" onclick="themMoi()">
+<p id="hienThi"></p>
+<script>
+    class KhachHang {
+            constructor(maKH, tenKH, soDT, diaChi, email) {
+                this.maKH = maKH;
+                this.tenKH = tenKH;
+                this.soDT = soDT;
+                this.diaChi = diaChi;
+                this.email = email;
+            }
+        getMaKH() {
+            return this.maKH;
+        }
+        getTenKH() {
+            return this.tenKH;
+        }
+        getSoDT() {
+            return this.soDT;
+        }
+        getDiaChi(){
+            return this.diaChi;
+        }
+        getEmail() {
+            return this.email;
+        }
+        setMaKH(maKH) {
+            this.maKH = maKH;
+        }
+        setTenKH(tenKH) {
+            this.tenKH = tenKH;
+        }
+        setSoDT(soDT) {
+            this.soDT = soDT;
+        }
+        setDiaChi(diaChi){
+            this.diaChi = diaChi();
+        }
+        setEmail(email) {
+            this.email = email;
+        }
+        getInfor() {
+            return "1. Mã KH: " + this.getMaKH() + "\n" +
+                "2. Tên KH: " + this.getTenKH() + "\n" +
+                "3. Số Điện Thoại KH: " + this.getSoDT() + "\n" +
+                "4. Địa Chỉ KH: " + this.getDiaChi() + "\n"
+                "5. Email KH: " + this.getEmail() + "\n"
+        }
+    }
+    let danhSachKH = [];
+    let khachHang1 = new KhachHang("001", "hoa1", "12345", "danang", "hoa@gmail.com");
+    let khachHang2 = new KhachHang("002", "hoa2", "56789", "quangnam", "hoa@gmail.com");
+    let khachHang3 = new KhachHang("003", "hoa3", "02468", "hanoi", "hoa@gmail.com");
+    let khachHang4 = new KhachHang("004", "hoa4", "13579", "hue", "hoa@gmail.com");
+    danhSachKH.push(khachHang1);
+    danhSachKH.push(khachHang2);
+    danhSachKH.push(khachHang3);
+    danhSachKH.push(khachHang4);
+    hienThi(danhSachKH);
+    function themMoi() {
+        let maKH = prompt("Nhập mã KH");
+        let tenKH = prompt("Nhập tên KH");
+        let soDT = prompt("Nhập số điện thoại");
+        let diaChi = prompt("Nhập địa chỉ")
+        let email = prompt("Nhập email")
+        let khachHang = new KhachHang(maKH, tenKH, soDT, diaChi, email);
+        danhSachKH.push(khachHang);
+        hienThi(danhSachKH)
+    }
+    function hienThi(danhSach) {
+        let bang = '<table border="1">\n' +
+            '    <tr>\n' +
+            '        <th>Stt</th>\n' +
+            '        <th>MãKH</th>\n' +
+            '        <th>TênKH</th>\n' +
+            '        <th>Số ĐT</th>\n' +
+             '       <th>Địa Chỉ</th>\n' +
+            '        <th>Email</th>\n' +
+            '    </tr>'
+        for (let i = 0; i < danhSach.length; i++) {
+            bang += '<tr>\n' +
+                '        <td>' + (i + 1) + '</td>\n' +
+                '        <td>' + danhSach[i].getMaKH() + '</td>\n' +
+                '        <td>' + danhSach[i].getTenKH() + '</td>\n' +
+                '        <td>' + danhSach[i].getSoDT() + '</td>\n' +
+                '        <td>' + danhSach[i].getDiaChi() + '</td>\n' +
+                '        <td>' + danhSach[i].getEmail() + '</td>\n' +
+                '    </tr>'
+        }
+        bang += '</table>'
+        document.getElementById("hienThi").innerHTML = bang;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let markArray = [];
+    function arrayInit(quantity) {
+        quantity = parseInt(prompt('Nhập vào số nguyên muốn kiểm tra:'));
+        for (let i = 0; i < quantity; i++) {
+            markArray.push(prompt('Nhập vào điểm thứ ' + (i + 1)));
+        }
+        return markArray;
+    }
+    arrayInit();
+    display(markArray);
+    function findMin(needToCheckArray) {
+        let min = needToCheckArray[0];
+        for (let i = 1; i < needToCheckArray.length; i++) {
+            if (min > needToCheckArray[i]) {
+                min = needToCheckArray[i];
+            }
+        }
+        return min;
+    }
+
+    function display(array) {
+        document.write('Mảng điểm là ' + array+'<br>');
+        document.write('Giá trị nhỏ nhất trong mảng là '+findMin(array));
+    }
+</script>
+</body>
+</html>

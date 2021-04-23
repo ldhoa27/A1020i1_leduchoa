@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<P id="result"></P>
+<script>
+    class Temperature{
+        constructor(doC) {
+            this.doC =doC;
+        }
+        getdoC(){
+            return this.doC;
+        }
+        getdoK(){
+            return this.doC + 273.15;
+        }
+        getdoF(){
+            return this.doC * 1.8 + 32;
+        }
+    }
+    let temperature1 = new Temperature(30);
+    alert("do K: " + temperature1.getdoK() + " do F: " + temperature1.getdoF());
+
+    // let result = "";
+    // let temp = new Temperature();
+    // temp.setdoC(25);
+    // result = "do K:" + temp.doK() + " do F :" + temp.doF();
+    // document.getElementById("result").innerText = result;
+    // temp.setdoC(25);
+    // let Temperature = function() {
+    //     this.setdoC = function(doC) {
+    //         this.doC = doC;
+    //     };
+    //     this.getdoC = function(doC) {
+    //         return this.doC;
+    //     };
+    //     this.doF = function() {
+    //         return this.doC * 1.8 + 32;
+    //     };
+    //     this.doK = function() {
+    //         return this.doC + 273.15;
+    //     };
+    // };
+</script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let MyDate = function (day, month, year) {
+    //         this.day = day;
+    //         this.month = month;
+    //         this.year = year;
+    //     this.getDay = function () {
+    //         return this.day;
+    //     }
+    //     this.getMonth = function () {
+    //         return this.month;
+    //     }
+    //     this.getYear = function () {
+    //         return this.year;
+    //     }
+    //     this.setDay = function (day) {
+    //         this.day =day;
+    //     }
+    //     this.setMonth = function (month) {
+    //         this.month = month;
+    //     }
+    //     this.setYear = function (year) {
+    //         this.year = year;
+    //     }
+    //
+    // };
+    // // xây dựng lớp khởi tạo
+    // let date = new MyDate(2, 2, 2007);
+    // // truy cập phương thức của lớp Date
+    // let day = date.getDay();
+    // let month = date.getMonth();
+    // let year = date.getYear();
+    // // hiển thị ngày tháng năm
+    // alert(day + "/" + month + "/" + year);
+    //
+    // date.setDay(10);
+    // date.setMonth(10);
+    // date.setYear(2020);
+    // day = date.getDay();
+    // month = date.getMonth();
+    // year = date.getYear();
+    // alert(day + "/" + month + "/" +year);
+    // let day = new MyDate();
+    // let month = new MyDate();
+    // let year = new MyDate();
+    class iDate {
+        constructor(day, month, year) {
+            this.day = day;
+            this.month = month;
+            this.year = year;
+        }
+    }
+        let date = new iDate(2, 2, 2007);
+        alert(date.day + "/" + date.month + "/" + date.year);
+        let date1 = new iDate(9, 9, 2020)
+        alert(date1.day + "/" + date1.month + "/" +date1.year);
+</script>
+
+</body>
+</html>

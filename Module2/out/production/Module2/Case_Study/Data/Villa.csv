@@ -1,0 +1,3 @@
+id, nameService, areaUsed, rentalCost, maxCapacity, rentType, standRoom, comfortsService, areaPool, floor 
+
+SVVL-2222,Anpha,90.0,2000.0,20.0,SVVL-2222,SVVL-2222,Car,80.0,20

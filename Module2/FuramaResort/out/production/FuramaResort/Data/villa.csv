@@ -1,0 +1,13 @@
+id, nameService, areaUSe, rentalCosts, maxNumberOfPeople, typeRent,  roomStandard, convenientDescription,  areaPool, numberOfFloors
+1,villa,32.0,3000.0,4,Vip,5 sao,karaoke,3.0,5
+mot,vlllaa,23.0,42.0,1,vip,5soa,massage,5.0,4
+Name: Vinpear
+Area: 32
+Rent: 300.0
+Amount: 5
+Rental_Type: SVVL-4321
+Id: SVVL-1234
+Standard_Room: SVVL-1235
+Description: Massage
+AreaPool: 31.0
+Floors: 5

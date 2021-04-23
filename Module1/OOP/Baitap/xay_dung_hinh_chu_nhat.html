@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Recangle{
+        constructor(height, weidth) {
+            this.height =height;
+            this.weidth =weidth;
+        }
+        getArea(){
+            return this.weidth * this.height;
+        }
+        getCV(){
+            return this.weidth + this.height;
+        }
+    }
+    let circle1 = new Recangle(5, 2);
+    alert(circle1.getArea() + " ; " + circle1.getCV());
+</script>
+</body>
+</html>

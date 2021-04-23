@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+        [class*="col-"] {
+            float: left;
+            padding: 10px;
+        }
+        .menu{
+            background-color: #333333;
+            float: left;
+
+        }
+        a{
+            color: #f1f1f1;
+            padding: 10px;
+        }
+        #mid{
+            padding-top: 0px;
+            padding-left: 1000px;
+        }
+        .row{
+            clear: both;
+        }
+        .side{
+            background-color: #ecf0f1;
+            float: left;
+            height: 600px;
+            width: 20%;
+        }
+        .main{
+            background-color: white;
+            width: 60%;
+            height: 600px;
+            padding-left: 31px;
+        }
+        .right{
+            background-color: #ecf0f1;
+            float: right;
+            height: 600px;
+            width: 20%;
+
+        }
+        .footer{
+            height: 60px;
+            width: 100%;
+            background-color: #bdc3c7;
+            padding-bottom: 100px;
+            border: 1px solid wheat;
+            text-align: center;
+        }
+        a:hover{
+            color: blanchedalmond;
+        }
+        @media only screen and (max-width: 768px) {
+            [class*="col-"] {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="col-12 menu">
+            <a href="#">Logo</a>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Project</a>
+            <a href="#">Contact</a>
+            <a href="#"><img id="mid" src="image/log-in2.png" />Login</a>
+        </div>
+    </div>
+    <div class="row">
+            <div class="col-2 side">
+                <ul>
+                    <a href="#" style="color: blue">Link1</a><br>
+                    <a href="#" style="color: blue">Link2</a><br>
+                    <a href="#" style="color: blue">Link3</a><br>
+                    <a href="#" style="color: blue">Link4</a>
+                </ul>
+            </div>
+            <div class="col-8 main">
+                <h5>WellCome</h5>
+                <p>This text is styled with some of the text formatting properties. The heading uses the text-align,
+                    text-transform, and color properties. The paragraph is indented, aligned, and the space between characters is specified.
+                    The underline is removed from this colored "Try it Yourself" link.</p><hr>
+                <p>Test</p>
+            </div>
+            <div class="col-2 right">
+                <button type="button" style="height: 100px; width: 200px" onclick="alert('Hello world!')">Click Me!</button>
+            </div>
+    </div>
+    <div class="row">
+        <div class="col-12 footer">
+            <h6>Footer</h6>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+        <script>
+            let chuoi = prompt("nhap chuoi");
+            let a = chuoi.charArt("0");
+            count = 0;
+            let check = false;
+            for (let i = 0; i < a.length; i++) {
+                if (chuoi[i] === ' ') {
+                    count++;
+                    check = true;
+                }
+            }
+            alert('So tu co trong chuoi la: '+(count+1));
+
+
+        <!--    let array = 'This is the array need to check space';-->
+        <!--    let count = 0;-->
+        <!--    for (i in array) {-->
+        <!--        if (array[i] === ' ') {-->
+        <!--            count++;-->
+        <!--        }-->
+        <!--    }-->
+        <!--    alert('So tu co trong chuoi la: '+(count+1));-->
+        </script>
+</body>
+</html>

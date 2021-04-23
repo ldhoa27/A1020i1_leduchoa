@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai1</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let sum = 0;
+    let n;
+    do {
+        n = parseInt(prompt("Nhập số lượng số muốn kiểm tra: "));
+    } while (n > 20 || n < 0);
+    for (let i = 0; i < n; i++) {
+        let num = parseInt(prompt("Nhập vào số thứ :" + (i + 1)));
+        arr.push(num);
+    }
+    for (let j = 0; j < arr.length; j++) {
+        if (arr[j] % 3 === 0 && arr[j] % 5 === 0) {
+            sum += arr[j];
+        }
+    }
+
+    alert(arr);
+    alert("Tổng của các số là bội chung của 3 và 5 là: " + sum);
+</script>
+</body>
+</html>

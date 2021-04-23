@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let input_number = parseInt(prompt('Can kiem tra bao nhiêu số nguyên tố :'));
+        let i = 1;
+        let count = 0;
+        for (i = 2; i <= input_number; i++) {
+            let j = 2;
+            let count_mod = 0;
+            for (j = 2; j < (i - 1); j++) {
+                if (i % j === 0) {
+                    count_mod = count_mod + 1;
+                }
+            }
+            if (count_mod === 0) {
+                if (count <= 20) {
+                    document.write(i + ',');
+                }
+                count++;
+            }
+        }
+
+    </script>
+
+</body>
+</html>

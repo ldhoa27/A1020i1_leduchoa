@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+        <script>
+            let arr = [];
+            let count= 0;
+            for(let i = 0; i < 10; i++){
+                arr[i] = prompt("nhap vao phan tu thu " + i);
+            }
+            for(i in arr){
+                for(j in arr[i]){
+                    if(isNaN(arr[i][j])===false){
+                        count++;
+                    }
+                }
+            }
+            console.log(count);
+        </script>
+
+</body>
+</html>

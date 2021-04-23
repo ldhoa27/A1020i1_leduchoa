@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let a = parseInt(prompt("nhập điểm bài kiểm tra:"));
+        let b = parseInt(prompt("nhập điểm giữa kì:"));
+        let c = parseInt(prompt("nhập điểm cuối kì:"));
+        let average = (a + b+ c)/3;
+        if(average >= 75){
+            console.log("Loại A");
+        } else if(average >= 60 && average < 75){
+            console.log("Loại B");
+        } else if(average >= 45 && average < 60){
+            console.log("Loại C");
+        } else if(average >= 35 && average < 45){
+            console.log("loại D");
+        }
+        else{
+            console.log("Loại E");
+        }
+
+
+
+    </script>
+
+</body>
+</html>

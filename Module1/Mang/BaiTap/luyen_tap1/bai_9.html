@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+        <script>
+            var songuyen1 = [];
+            for (let i = 0; i < 10; i++) {
+                songuyen1[i] = parseInt(prompt("Nhập vào 10 số nguyên " + i + ": "));
+            }
+            var songuyen2 = [];
+            for (let i = 0; i < 10; i++) {
+                songuyen2[i] = parseInt(prompt("Nhập vào 10 số nguyên " + i + ": "));
+            }
+            var songuyen3 = songuyen1.concat(songuyen2);
+            console.log(songuyen3);
+        </script>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Biểu diễn hình tròn</title>
+    <link rel="stylesheet" href="../test-module1-isFibonacci/css/style.css">
+</head>
+<body>
+<h1>Biểu diễn hình tròn</h1>
+<button onclick="start()">Bắt đầu</button>
+<br>
+<br>
+<canvas id="my-canvas" height="500px" width="500px" style="border: black 1px solid"></canvas>
+<script>
+    let Circle = function (xPosition, yPosition, radius, color, canvasID) {
+        this.radius = radius;
+        this.color = color;
+        this.xPosition = xPosition;
+        this.yPosition = yPosition;
+        this.canvas = document.getElementById(canvasID);
+        this.context = this.canvas.getContext('2d');
+
+        this.render = function () {
+            this.context.beginPath();
+            this.context.arc(this.xPosition, this.yPosition, this.radius, 0,360);
+            this.context.stroke();
+            this.context.fillStyle = this.color;
+            this.context.fill();
+            this.closePath();
+        }
+    };
+
+    function start () {
+        let circle = new Circle(250,250, 100, "#000000","my-canvas");
+        circle.render();
+    }
+</script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+     <form>
+         <p><b>Caculator</b></p>
+         <input type="text" id="inputA">
+         <input type="text" id="inputB">
+         <br>
+         <br>
+         <input type="button" value=" Addition(+)" id="+" onclick="tinh()" style="margin-top: 34px; width: auto;">
+         <input type="button" value=" Subtraction(-)" id="-" onclick="tinh()" style="margin-top: 34px; width: auto;">
+         <input type="button" value=" Multiplication(X)" id="*" onclick="tinh()" style="margin-top: 34px; width: auto;">
+         <input type="button" value="Division(/) " id="/" onclick="tinh()" style="margin-top: 34px; width: auto;">
+         <p id="ketQua" style="margin-top: 20px;"></p>
+     </form>
+     <script>
+         let a = parseInt(document.getElementById("inputA").value);
+         let b = parseInt(document.getElementById("inputB").value);
+         function tinh() {
+             let a = parseInt(document.getElementById("inputA").value);
+             let b = parseInt(document.getElementById("inputB").value);
+             document.getElementById("ketQua").innerHTML = "result: " + (a+b);
+         }
+         function tinh1() {
+             let a = parseInt(document.getElementById("inputA").value);
+             let b = parseInt(document.getElementById("inputB").value);
+             document.getElementById("ketQua").innerHTML = "result: " + (a - b);
+         }
+         function tinh2() {
+             let a = parseInt(document.getElementById("inputA").value);
+             let b = parseInt(document.getElementById("inputB").value);
+             document.getElementById("ketQua").innerHTML = "result: " + (a * b);
+         }
+         function tinh3() {
+             let a = parseInt(document.getElementById("inputA").value);
+             let b = parseInt(document.getElementById("inputB").value);
+             document.getElementById("ketQua").innerHTML = "result: " + (a / b);
+         }
+     </script>
+
+</body>
+</html>

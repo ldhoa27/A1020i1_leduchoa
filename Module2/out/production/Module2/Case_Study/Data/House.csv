@@ -1,0 +1,3 @@
+ id, nameService,  areaUsed,  rentalCost,  maxCapacity,  rentType,  standRoom,  comfortsService,  floor
+
+SVHO-2222,Flv,100.0,1000.0,20.0,SVHO-2222,SVHO-2222,Car,20

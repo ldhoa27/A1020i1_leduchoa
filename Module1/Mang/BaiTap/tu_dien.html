@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Từ điên</title>
+</head>
+<body>
+<input type="text" id="nhap">
+<input type="button" onclick="dichTu()"value="Tra từ">
+<script>
+    let en=['hello','you','he'];
+    let vn=['xin chao','ban','cau ay'];
+    function dichTu() {
+        let word = document.getElementById("nhap").value;
+        let check=false;
+        let index;
+        for (let i=0; i<en.length;i++){
+            if (en[i]===word){
+                check=true;
+                index=i;
+                break;
+            }
+        }
+        if (check){
+            alert(word+":"+vn[index]);
+        }else {
+            alert(" not found")
+        }
+    }
+</script>
+</body>
+</html>

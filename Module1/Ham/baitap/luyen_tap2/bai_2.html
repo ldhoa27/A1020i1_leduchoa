@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form >
+    <label for="banKinh">Bán kính:</label>
+    <input type="text" id="banKinh">
+    <label style="margin-left: 0px;">cm</label>
+    <br>
+    <p id="ketQua" style="margin-top: 20px;"></p>
+    <input type="button" value="Tính Diện Tích" id="button" onclick="dienTichHinhTron()" style="margin-top: 34px; width: auto;">
+    <input type="button" value="Tính Chu Vi" id="button1" onclick="chuviHinhTron()" style="margin-top: 34px; width: auto;">
+</form>
+<script>
+    function dienTichHinhTron(){
+        let banKinh = parseFloat(document.getElementById("banKinh").value);
+        document.getElementById("ketQua").innerHTML = "<b>Diện tích</b>:" + (Math.pow(banKinh,2)*Math.PI).toFixed(2) + "cm";
+        document.getElementById("button").style.marginTop = "0px";
+    }
+    function chuviHinhTron(){
+        let banKinh = parseFloat(document.getElementById("banKinh").value);
+        document.getElementById("ketQua").innerHTML = "<b>Chu vi</b>:" + (banKinh* 2* Math.PI).toFixed(2) + "cm";
+        document.getElementById("button").style.marginTop = "0px";
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+        <script>
+            let numbers = [-3, 32, 1];
+            let count=0;
+            let tb = (-3 + 32 + 1)/3;
+            for(let i = 0; i < numbers.length; i++){
+                if(numbers[i] >= 3){
+                    count++;
+                }
+            }
+            let max = numbers[0];
+            for (let j = 1; j < numbers.length; j++) {
+                if(numbers[j]>max){
+                    max=numbers[j];
+                }
+            }
+            document.write('Mang vua nhap la '+numbers +'. giá trị lớn nhất trong mang la '+max);
+            document.write("giá trị trung binh của mảng là:" + tb);
+        </script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+ /*Cú pháp*/
+ table {border: 1px solid #C00;}
+ /*Trong đó table chính là selector*/
+ /*Border chính là thuộc tính*/
+ /*1px solid #C00 chính là giá trị cho thuộc tính border*/
+
+ /*2. Bộ chọn thẻ html*/
+ /*selector (bộ chọn) trên được gọi là bộ chọn sử dụng các thẻ HTML như h1, table, ul, form v.v.*/
+ h1{
+     color: #36CFFF;
+ }
+ /*3. Bộ chọn class*/
+ .black{
+     color: #000000;
+ }

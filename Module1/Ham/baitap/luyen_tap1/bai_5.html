@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="nhap">
+<input type="button" onclick="dichTu()"value="Tra từ">
+    <script>
+
+            let sao=['Polaris','Aldebaran','Deneb', 'Vega', 'Altair', 'Dubhe ', 'Regulus'];
+            let chom=['Ursa Minor','Tarurus','Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+
+            function dichTu() {
+                let word = document.getElementById("nhap").value;
+                let check=false;
+                let index;
+                for (let i=0; i<sao.length;i++){
+                    if (sao[i]===word){
+                    check=true;
+                    index=i;
+                    break;
+                    }
+                }
+                if (check){
+                    alert("sao" + " " + " " + word + " " +  "thuộc" + " " + "chòm :" + chom[index]);
+                }else {
+                    alert(" not found")
+                }
+            }
+    </script>
+</body>
+</html>

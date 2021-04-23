@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+            let arrayNumber = [];
+            for (let i = 0; i < 2; i++) {
+                arrayNumber.push(prompt('Nhập vào điểm thứ ' + (i + 1)));
+            }
+            let d = daoSo(arrayNumber);
+            alert(d[0] + " , " + d[1]);
+            function daoSo(value) {
+                return value.reverse();
+            }
+    </script>
+
+</body>
+</html>

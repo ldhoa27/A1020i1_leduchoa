@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+        <script>
+            let check=false;
+            let array = [2, 4, 6, 7];
+            let input_number = parseInt(prompt('Nhap vao so nguyen V:'));
+                for(i = 0; i < array.length; i ++) {
+                    if (input_number == array[i]) {
+                        check = true;
+                    }
+                }
+                if (check){
+                    document.write("số vừa nhap co trong mang");
+                } else{
+                    document.write("số vừa đó khoong có trong mang");
+                }
+        </script>
+
+</body>
+</html>

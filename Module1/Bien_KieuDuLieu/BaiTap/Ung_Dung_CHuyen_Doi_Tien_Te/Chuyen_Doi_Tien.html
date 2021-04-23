@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div style="margin: auto; width: 50%; height: 50px; position: relative;">
+    <div style="position: absolute; text-align: center; top: 0px;">
+        <label for="amout"><b>Amount</b></label><br>
+        <input type="text" id="amout" style="text-align: end;">
+    </div>
+    <div style="position: absolute; left: 230px; text-align: center; top: 0px;">
+        <label style="margin-top: 0px;"><b>Form Currency</b></label><br>
+        <select id="tienViet" style="width: 100%; height: 21px;">
+            <option value="vnd">VietNam</option>
+            <option value="usd">USD</option>
+        </select>
+    </div>
+    <div style="position: absolute; left: 390px; text-align: center; top: 0px;">
+        <label style="margin-top: 0px;"><b>To Currency</b></label><br>
+        <select id="doLa" style="width: 100%; height: 21px;">
+            <option value="usd">USD</option>
+            <option value="vnd">VietNam</option>
+        </select>
+    </div>
+    <div style="position: absolute; left: 530px; text-align: center; top: 18px;">
+        <input type="button" onclick="chuyenTien()" value="Convert" class="button">
+    </div>
+</div>
+<p id="ketQua" style="margin: auto; width: 50%; height: 50px; position: relative; color: black; font-size: 20px;"></p>
+<script>
+    function chuyenTien(){
+        let value = parseFloat(document.getElementById("amout").value);
+        let result=0;
+        if(!isNaN(value)){
+            switch(document.getElementById("tienViet").value){
+                case "vnd":
+                    switch(document.getElementById("doLa").value){
+                        case "usd":
+                            if(value!=0)result = value / 23000;
+                            break;
+                        case "vnd":
+                            result = value;
+                            break;
+                        default:
+                            result = 0;
+                    }
+                    break;
+                case "usd":
+                    switch(document.getElementById("doLa").value){
+                        case "vnd":
+                            result = value * 23000;
+                            break;
+                        case "usd":
+                            result = value;
+                            break;
+                        default:
+                            result = 0;
+                    }
+                    break;
+                default:
+                    result = 0;
+                    break;
+            }
+        }
+        document.getElementById("ketQua").innerHTML = "Result: " + result.toFixed(1);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let input = prompt('nhập vao 1 số:');
+        if(checkDuong(input)){
+            alert('số đó là nguyên dương');
+        } else{
+            alert('số đó không phải nguyên duong:');
+        }
+        function checkDuong(value) {
+            let output = parseInt(value);
+            if (parseInt(output) < 0) return false;
+            else return true;
+        }
+    </script>
+</body>
+</html>

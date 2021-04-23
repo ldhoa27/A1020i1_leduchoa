@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        var a = parseInt(prompt("nhập giá trị a:"));
+        var b = parseInt(prompt("nhập giá trị b:"));
+        if(a==0){
+            if(b==0){
+                document.write("pt vô số nghiệm");
+            } else {
+                document.write("pt vô nghiệm");
+            }
+        } else {
+            var x = -b/a;
+            document.write("pt có 1 nghiệm là:", x);
+        }
+    </script>
+
+</body>
+</html>

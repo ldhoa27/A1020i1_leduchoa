@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function giaiThua(number) {
+        let gth = 1;
+        for(i = 1; i <= number; i++){
+            gth = gth * i;
+        }
+        return gth;
+    }
+    let input_num = parseInt(prompt('nhập vao 1 so bất kì:'));
+    alert('Giai thua cua '+input_num+' la: '+ giaiThua(input_num));
+</script>
+</body>
+</html>
