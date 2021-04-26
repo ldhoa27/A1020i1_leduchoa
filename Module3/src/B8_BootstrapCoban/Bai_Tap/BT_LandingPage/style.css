@@ -1,8 +1,7 @@
-.jumbotron {
-    background-size: cover;
-    height: 100%;
+.main{
+    padding: 0 0 !important;
+    margin: 0 0 !important;
 }
-
 .cus-navbar {
     display: flex;
     flex-direction: row;
@@ -11,7 +10,7 @@
 }
 
 .cus-navbar-space-around {
-    width: 80%;
+    width: 100%;
     margin-left: 150px;
     margin-right: 10px;
     display: flex;
@@ -30,6 +29,7 @@
     position: relative;
     text-align: left;
     color: black;
+    padding: 0 0 !important;
 }
 
 .text-left-centered {
@@ -72,7 +72,7 @@ h4:hover{
     text-decoration: underline;
 }
 .second-content{
-    padding: 4px;
+    padding: 0 0 !important;
 }
 .conten{
     margin-left: 30px;
@@ -98,4 +98,25 @@ h4{
     max-height: 100%;
     height: 100%;
     margin-bottom: 50px;
+}
+.conten-infor{
+    margin-top: 7em;
+    margin-left: 4rem;
+    text-align: center;
+}
+.six-content{
+    display: block;
+    padding-left: 36px;
+    padding-right: 36px;
+}
+.card-img-top{
+    width: 100%;
+    height: auto;
+    padding: 25px;
+}
+.video{
+    margin-left: 250px; 
+}
+.content-bar{
+    margin-left: 30px;
 }
