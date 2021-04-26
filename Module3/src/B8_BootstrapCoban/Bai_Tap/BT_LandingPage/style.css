@@ -90,3 +90,12 @@ h4{
 .conten-third{
     margin-left: 30px;
 }
+.four-content{
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 100%;
+    width: 100%;
+    max-height: 100%;
+    height: 100%;
+    margin-bottom: 50px;
+}
