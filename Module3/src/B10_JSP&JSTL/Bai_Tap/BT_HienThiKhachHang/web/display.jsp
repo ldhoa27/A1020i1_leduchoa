@@ -6,9 +6,14 @@
     <style>
         table{
             font-family: sans-serif;
-            margin-left: 500px;
+            margin-left: 600px;
             text-align: center;
         }
+        img{
+            width: 200px;
+            height: 200px;
+        }
+
     </style>
 </head>
 <body>
@@ -25,7 +30,7 @@
             <td><c:out value="${customer.name}"/></td>
             <td><c:out value="${customer.birth}"/></td>
             <td><c:out value="${customer.address}"/></td>
-            <td> <img src="<c:out value="${customer.img}" />" width="200" height="200"/></td>
+            <td><img src="${customer.img}"/></td>
         </tr>
     </c:forEach>
 </table>

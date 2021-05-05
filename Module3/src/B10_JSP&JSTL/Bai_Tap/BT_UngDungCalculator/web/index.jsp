@@ -35,8 +35,9 @@
       <tr>
         <td><input type="submit" value="Calculator"></td>
       </tr>
+
+
     </table>
   </form>
-  <c:
   </body>
 </html>
