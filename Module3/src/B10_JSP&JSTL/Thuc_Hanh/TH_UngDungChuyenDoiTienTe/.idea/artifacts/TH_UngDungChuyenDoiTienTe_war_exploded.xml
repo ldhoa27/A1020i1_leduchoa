@@ -1,0 +1,23 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="TH_UngDungChuyenDoiTienTe:war exploded">
+    <output-path>$PROJECT_DIR$/target/TH_UngDungChuyenDoiTienTe-1.0-SNAPSHOT</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>TH_UngDungChuyenDoiTienTe</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="TH_UngDungChuyenDoiTienTe" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/TH_UngDungChuyenDoiTienTe-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="TH_UngDungChuyenDoiTienTe/web/Web" />
+    </root>
+  </artifact>
+</component>
