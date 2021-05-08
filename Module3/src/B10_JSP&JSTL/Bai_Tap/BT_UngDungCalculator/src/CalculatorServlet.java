@@ -11,37 +11,18 @@ public class CalculatorServlet extends HttpServlet {
         float first = Float.parseFloat(request.getParameter("first"));
         float second = Float.parseFloat(request.getParameter("second"));
         String operator = request.getParameter("operator");
-        String error="";
+        String error = request.getParameter("error");
         float result = 0;
+
         try {
-            switch (operator){
-                case "+":
-                    result = first + second;
-                    break;
-                case "-":
-                    result = first - second;
-                    break;
-                case "*":
-                    result = first * second;
-                    break;
-                case "/":
-                    if(second != 0)
-                        result = first / second;
-                    else
-                        throw new RuntimeException("Can't divide by zero");
-                default:
-                    throw new RuntimeException("Invalid operation");
-            }
+            result = Calculator.calculate(first, second, operator);
         }catch (Exception ex){
             error = ex.getMessage();
         }
         request.setAttribute("error", error);
         request.setAttribute("result", result);
         request.getRequestDispatcher("result.jsp").forward(request, response);
-
     }
-
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
     }
 }

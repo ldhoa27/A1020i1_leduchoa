@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="BT_HienThiKhachHang:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c2b7a7b1-106b-44e6-98f9-e125e3070f23" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../../../Module2/src/demo/Mine.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Module2/src/demo/Mine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BT_HienThiKhachHang_war_exploded/WEB-INF/classes/Bean/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BT_HienThiKhachHang_war_exploded/WEB-INF/classes/Bean/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BT_HienThiKhachHang_war_exploded/WEB-INF/classes/Servlet/CustomerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BT_HienThiKhachHang_war_exploded/WEB-INF/classes/Servlet/CustomerServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BT_HienThiKhachHang_war_exploded/display.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BT_HienThiKhachHang_war_exploded/display.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BT_HienThiKhachHang/Bean/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BT_HienThiKhachHang/Bean/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BT_HienThiKhachHang/Servlet/CustomerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BT_HienThiKhachHang/Servlet/CustomerServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bean/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/beans/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Servlet/CustomerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/CustomerServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/display.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/display.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BT_UngDungCalculator/BT_UngDungCalculator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../BT_UngDungCalculator/BT_UngDungCalculator.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B7_ThietKeBoCucTrangWeb/Bai_tap/BT_GiaoDienFaceBook/BT_TaoGiaoDienFaceBook.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../B7_ThietKeBoCucTrangWeb/Bai_tap/BT_GiaoDienFaceBook/BT_TaoGiaoDienFaceBook.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B7_ThietKeBoCucTrangWeb/Bai_tap/BT_GiaoDienFaceBook/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../B7_ThietKeBoCucTrangWeb/Bai_tap/BT_GiaoDienFaceBook/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B8_BootstrapCoban/Bai_Tap/BT_LandingPage/BT_XayDungLandingPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../B8_BootstrapCoban/Bai_Tap/BT_LandingPage/BT_XayDungLandingPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B8_BootstrapCoban/Bai_Tap/BT_LandingPage/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../B8_BootstrapCoban/Bai_Tap/BT_LandingPage/style.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Jsp File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectId" id="1sCEBRWFdbHKtV2VVqk7FgpRbgr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\A1020i1\Module3\src\B10_JSP&amp;JSTL\Bai_Tap\BT_HienThiKhachHang\web\img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\A1020i1\Module3\src\B10_JSP&amp;JSTL\Bai_Tap\BT_HienThiKhachHang\web" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 9.0.21" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.21" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/" />
+      <deployment>
+        <artifact name="BT_HienThiKhachHang:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Tomcat_9_0_21_BT_HienThiKhachHang_2" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="61364" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="BT_HienThiKhachHang:war exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c2b7a7b1-106b-44e6-98f9-e125e3070f23" name="Default Changelist" comment="" />
+      <created>1620368035776</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1620368035776</updated>
+      <workItem from="1620368040211" duration="2004000" />
+      <workItem from="1620374682384" duration="96000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="254" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1620368558679">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="254" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.860@0.0.1600.860" timestamp="1620368558679" />
+    <state x="605" y="146" key="#com.intellij.ide.util.MemberChooser" timestamp="1620368110096">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="605" y="146" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1620368110096" />
+    <state x="506" y="171" key="FileChooserDialogImpl" timestamp="1620372969496">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="506" y="171" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1620372969496" />
+    <state width="1069" height="222" key="GridCell.Tab.0.bottom" timestamp="1620372971284">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1069" height="222" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1620372971284" />
+    <state width="1069" height="222" key="GridCell.Tab.0.center" timestamp="1620372971284">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1069" height="222" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1620372971284" />
+    <state width="1069" height="222" key="GridCell.Tab.0.left" timestamp="1620372971284">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1069" height="222" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1620372971284" />
+    <state width="1069" height="222" key="GridCell.Tab.0.right" timestamp="1620372971284">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1069" height="222" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1620372971284" />
+    <state width="1069" height="222" key="GridCell.Tab.1.bottom" timestamp="1620372971284">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1069" height="222" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1620372971284" />
+    <state width="1069" height="222" key="GridCell.Tab.1.center" timestamp="1620372971284">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1069" height="222" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1620372971284" />
+    <state width="1069" height="222" key="GridCell.Tab.1.left" timestamp="1620372971284">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1069" height="222" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1620372971284" />
+    <state width="1069" height="222" key="GridCell.Tab.1.right" timestamp="1620372971284">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1069" height="222" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1620372971284" />
+    <state width="1069" height="222" key="GridCell.Tab.2.bottom" timestamp="1620372971284">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1069" height="222" key="GridCell.Tab.2.bottom/0.0.1600.860@0.0.1600.860" timestamp="1620372971284" />
+    <state width="1069" height="222" key="GridCell.Tab.2.center" timestamp="1620372971284">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1069" height="222" key="GridCell.Tab.2.center/0.0.1600.860@0.0.1600.860" timestamp="1620372971284" />
+    <state width="1069" height="222" key="GridCell.Tab.2.left" timestamp="1620372971284">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1069" height="222" key="GridCell.Tab.2.left/0.0.1600.860@0.0.1600.860" timestamp="1620372971284" />
+    <state width="1069" height="222" key="GridCell.Tab.2.right" timestamp="1620372971284">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1069" height="222" key="GridCell.Tab.2.right/0.0.1600.860@0.0.1600.860" timestamp="1620372971284" />
+    <state x="280" y="4" key="SettingsEditor" timestamp="1620368441537">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="280" y="4" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1620368441537" />
+  </component>
+</project>
