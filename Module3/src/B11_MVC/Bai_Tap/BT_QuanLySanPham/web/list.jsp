@@ -1,38 +1,46 @@
-<%@ page import="model.bean.Product" %>
-<%@ page import="java.util.List" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
-    <title>Products List</title>
+    <title>Title</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/list.css">
 </head>
 <body>
-<h2>List student</h2>
-<%
-    List<Product> productListJSP = (List<Product>) request.getAttribute("productListServlet");
-%>
-<table>
-    <tr>
-        <td>Id</td>
-        <td>Name</td>
-        <td>Price</td>
-        <td>Describe</td>
-        <td>Producer</td>
-        <td>Edit</td>
-        <td>Delete</td>
-    </tr>
-    <%
-        for (int i = 0; i < productListJSP.size(); i++) {
-    %>
-    <tr>
-        <td><%=productListJSP.get(i).getId()%></td>
-        <td><%=productListJSP.get(i).getName()%></td>
-        <td><%=productListJSP.get(i).getPrice()%></td>
-        <td><%=productListJSP.get(i).getDescribe()%></td>
-        <td><%=productListJSP.get(i).getProducer()%></td>
-    </tr>
-    <%
-        }
-    %>
-</table>
+<a href="/?action=create">Create Product</a>
+<h2>Product management</h2>
+<form action="/">
+    <div id="search">
+        <a href="/"> back </a>
+        <input type="hidden" name="action" value="search"/>
+        <input type="text" name="keywork"/>
+        <input type="submit" value="search"/>
+    </div>
+    <table class="table-bordered table">
+        <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Producer</th>
+            <th scope="col">Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <c:forEach var="product" items="${products}">
+            <tr>
+                <td><c:out value="${product.id}"/></td>
+                <td><a href="?action=view&id=${product.getId()}"/><c:out value="${product.name}"/></td>
+                <td><c:out value="${product.price}"/></td>
+                <td><c:out value="${product.producer}"/></td>
+                <td>
+                    <a href="?action=delete&id=<c:out value='${product.id}'/>">Delete |</a>
+                    <a href="?action=edit&id=<c:out value='${product.id}'/>">Edit</a>
+                </td>
+            </tr>
+        </c:forEach>
+        </tbody>
+    </table>
+</form>
 </body>
 </html>

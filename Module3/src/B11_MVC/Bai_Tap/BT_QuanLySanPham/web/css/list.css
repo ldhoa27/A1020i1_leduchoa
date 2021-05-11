@@ -1,0 +1,19 @@
+body{
+    font-family: sans-serif;
+    text-align: center;
+}
+h2{
+    font-size: 20px;
+    text-align: center;
+}
+.table{
+    border: solid 1px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    height: 500px;
+}
+#search{
+    margin-right: 100px;
+}
