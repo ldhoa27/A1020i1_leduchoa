@@ -1,0 +1,66 @@
+CREATE PROCEDURE get_user_by_id(IN user_id INT)
+
+BEGIN
+
+    SELECT users.name, users.email, users.country
+
+    FROM users
+
+    where users.id = user_id
+
+    END$$
+
+DELIMITER ;
+
+  
+
+DELIMITER $$
+
+CREATE PROCEDURE insert_user(
+
+IN user_name varchar(50),
+
+IN user_email varchar(50),
+
+IN user_country varchar(50)
+
+)
+
+BEGIN
+
+    INSERT INTO users(name, email, country) VALUES(user_name, user_email, user_country);
+
+    END$$
+
+DELIMITER ;
+
+delimiter //
+create procedure sp_get_all_users()
+begin
+	select *
+    from users
+    order by name;
+end
+// delimiter ;
+
+delimiter //
+create procedure sp_edit_users(
+		pId int
+        , pName varchar(120)
+        , pEmail varchar(220)
+        , pCountry varchar(120)
+)
+begin
+	update users
+    set name = pName, email = pEmail, country = pCountry
+    where id = pId;
+end
+// delimiter ;
+
+delimiter //
+create procedure sp_delete_users(pId int(3))
+begin
+	delete from users
+    where id = pId;
+end
+// delimiter ;
