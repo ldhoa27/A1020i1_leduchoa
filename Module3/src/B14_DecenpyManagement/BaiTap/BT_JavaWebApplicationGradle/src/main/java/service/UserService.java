@@ -1,12 +1,20 @@
 package service;
 
+import model.User;
+
 import java.util.List;
 
 public interface UserService {
-    List<Product> findAll();
-    Product findById(int id);
-    void deleteById(int id);
-    void save(Product product);
-    void update(int id, Product product);
-    List<Product> findbyKeyWork(String keywork);
+    List<User> findAll();
+
+    void save(User user);
+
+    User findById(int id);
+
+    void update(User user);
+
+    void remove(int id);
+
+    List<User> findByCountry(String country);
+    List<User> sortNameASC();
 }

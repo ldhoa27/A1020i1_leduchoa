@@ -1,39 +1,80 @@
 package service.impl;
 
+import model.User;
+import repository.Repository;
+import repository.RepositoryImpl;
 import service.UserService;
 
+import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class UserServiceImpl implements UserService {
-    private UserServiceImpl productRepository = new UserServiceImpl();
+    private Repository userDAO = new RepositoryImpl();
 
     @Override
-    public List<Product> findAll() {
-        return productRepository.findAll();
+    public List<User> findAll() {
+        List<User> userList = new ArrayList<>();
+        try {
+            userList = userDAO.selectAllUser();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return userList;
     }
 
     @Override
-    public Product findById(int id) {
-        return productRepository.findById(id);
+    public void save(User user) {
+        try {
+            userDAO.insertUser(user);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
-    public void deleteById(int id) {
-        productRepository.deleteById(id);
+    public User findById(int id) {
+        try {
+            return userDAO.selectUser(id);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     @Override
-    public void save(Product product) {
-        productRepository.save(product);
+    public void update(User user) {
+        try {
+            userDAO.updateUser(user);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
     }
 
     @Override
-    public void update(int id, Product product) {
-        productRepository.update(id, product);
+    public void remove(int id) {
+        try {
+            userDAO.deleteUser(id);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
-    public List<Product> findbyKeyWork(String keywork) {
-        return productRepository.findbyKeyWork(keywork);
+    public List<User> findByCountry(String country) {
+        List<User> list = new ArrayList<>();
+        try {
+            list = userDAO.selectByCountry(country);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return list;
+    }
+
+    @Override
+    public List<User> sortNameASC() {
+        return this.userDAO.sortNameASC();
+
     }
 }
