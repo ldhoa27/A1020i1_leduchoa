@@ -1,6 +1,6 @@
-package repository;
+package model.repository;
 
-import model.User;
+import model.bean.User;
 
 import java.sql.SQLException;
 import java.util.List;
@@ -15,8 +15,4 @@ public interface Repository {
     boolean deleteUser(int id) throws SQLException;
 
     boolean updateUser(User user) throws SQLException;
-
-    List<User> selectByCountry(String country) throws SQLException;
-    List<User> sortNameASC();
-
 }

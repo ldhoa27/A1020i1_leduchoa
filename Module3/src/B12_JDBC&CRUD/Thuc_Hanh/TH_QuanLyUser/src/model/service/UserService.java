@@ -1,7 +1,9 @@
-package service;
+package model.service;
 
-import model.User;
 
+import model.bean.User;
+
+import java.sql.SQLException;
 import java.util.List;
 
 public interface UserService {
@@ -14,8 +16,5 @@ public interface UserService {
     void update(User user);
 
     void remove(int id);
-
-    List<User> findByCountry(String country);
-    List<User> sortNameASC();
 
 }

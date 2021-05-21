@@ -1,13 +1,13 @@
-package service.impl;
+package model.service;
 
-import repository.Repository;
-import repository.RepositoryImpl;
-import model.User;
-import service.UserService;
+import model.bean.User;
+import model.repository.Repository;
+import model.repository.RepositoryImpl;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+
 
 public class UserServiceImpl implements UserService {
     private Repository userDAO = new RepositoryImpl();
@@ -61,22 +61,9 @@ public class UserServiceImpl implements UserService {
         }
     }
 
-    @Override
-    public List<User> findByCountry(String country) {
-        List<User> list = new ArrayList<>();
-        try {
-            list = userDAO.selectByCountry(country);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return list;
-    }
 
-    @Override
-    public List<User> sortNameASC() {
-        return this.userDAO.sortNameASC();
-
-    }
 
 
 }
+
+

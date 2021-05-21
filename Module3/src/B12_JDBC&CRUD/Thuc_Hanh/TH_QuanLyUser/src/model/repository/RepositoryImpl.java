@@ -1,13 +1,9 @@
-package repository;
+package model.repository;
 
-
-
-
-import model.User;
+import model.bean.User;
 
 import java.sql.*;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class RepositoryImpl implements Repository {
@@ -17,9 +13,6 @@ public class RepositoryImpl implements Repository {
     private static final String SELECT_ALL_USER_SQL = "select * from users";
     private static final String DELETE_USER_BY_ID_SQL = "delete from users where id = ?";
     private static final String UPDATE_USER_SQL = "update users set name = ?, email = ?, country = ? where id = ?";
-    private static final String SELECT_USER_BY_COUNTRY_SQL = "select * from users where country like '%?%'";
-
-
 
     @Override
     public void insertUser(User user) throws SQLException {
@@ -94,43 +87,5 @@ public class RepositoryImpl implements Repository {
         return preparedStatement.executeUpdate() > 0;
     }
 
-    @Override
-    public List<User> selectByCountry(String searchCountry) throws SQLException {
-        List<User> list = new ArrayList<>();
-        Connection connection = baseRepository.getConnection();
-        PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM users where country like '%" + searchCountry + "%'");
-//        PreparedStatement preparedStatement = connection.prepareStatement(SELECT_USER_BY_COUNTRY_SQL);
-        preparedStatement.setString(1, "%"+ searchCountry + "%");
 
-        ResultSet resultSet = preparedStatement.executeQuery();
-
-        while (resultSet.next()){
-            int id = resultSet.getInt("id");
-            String name = resultSet.getString("name");
-            String email = resultSet.getString("email");
-            String country = resultSet.getString("country");
-            list.add(new User(id, name, email, country));
-        }
-        return list;
-    }
-
-    @Override
-    public List<User> sortNameASC() {
-        List<User> userList = new ArrayList<>();
-        try {
-            userList = selectAllUser();
-            Collections.sort(userList, (user1, user2) -> user2.getName().compareTo(user1.getName()));
-        }catch (Exception e){
-            e.printStackTrace();
-        }
-        return userList;
-    }
-
-
-
-
-//    public static void main(String[] args) throws SQLException {
-//        IUserDAO userDAO = new UserDAOImpl();
-//        System.out.println(userDAO.selectByName("n"));
-//    }
 }
