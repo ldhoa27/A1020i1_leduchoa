@@ -164,25 +164,57 @@ public class RepositoryImpl implements Repository {
     }
 
     @Override
-    public void addUserTransaction(User user) throws SQLException {
-
+    public void addUserTransaction(User user, int[] permision)  {
         Connection connection = baseRepository.getConnection();
+        PreparedStatement pstmt = null;
+        PreparedStatement pstmtAssignment = null;
+        ResultSet rs = null;
 
-        PreparedStatement preparedStatement = connection.prepareStatement(INSERT_USER_SQL);
-            try {
-                connection.setAutoCommit(false);
-                connection.prepareStatement("INSERT INTO users" + "  (name, email, country) VALUES " +
-                        " ('Messi', 'messi@uk.com', 'Agentina');").executeUpdate();
-                preparedStatement.setString(1, user.getName());
-                preparedStatement.setString(2, user.getEmail());
-                preparedStatement.setString(3, user.getCountry());
-                System.out.println(preparedStatement);
-                preparedStatement.executeUpdate();
+        try {
+            connection.setAutoCommit(false);
+
+            pstmt = connection.prepareStatement("insert into users(id, name, email, country) values (?, ?, ?, ?)", Statement.RETURN_GENERATED_KEYS);
+            pstmt.setString(1, user.getName());
+            pstmt.setString(2, user.getEmail());
+            pstmt.setString(3, user.getCountry());
+
+            int rowAffected = pstmt.executeUpdate();
+            rs = pstmt.getGeneratedKeys();
+            int userId = 0;
+            if (rs.next())
+                userId = rs.getInt(1);
+
+            if (rowAffected == 1) {
+                String sqlPivot = "INSERT INTO user_permision(user_id,permision_id) " + "VALUES(?,?)";
+                pstmtAssignment = connection.prepareStatement(sqlPivot);
+                for (int permisionId : permision) {
+                    pstmtAssignment.setInt(1, userId);
+                    pstmtAssignment.setInt(2, permisionId);
+                    pstmtAssignment.executeUpdate();
+                }
                 connection.commit();
-                connection.setAutoCommit(true);
-            } catch (Exception ex) {
+            } else {
                 connection.rollback();
-                ex.printStackTrace();
             }
+        } catch (SQLException ex) {
+            try {
+                if (connection != null)
+                    connection.rollback();
+            } catch (SQLException e) {
+                System.out.println(e.getMessage());
+            }
+            System.out.println(ex.getMessage());
+        } finally {
+            try {
+                if (rs != null) rs.close();
+                if (pstmt != null) pstmt.close();
+                if (pstmtAssignment != null) pstmtAssignment.close();
+                if (connection != null) connection.close();
+            } catch (SQLException e) {
+                System.out.println(e.getMessage());
+            }
+        }
     }
+
+
 }

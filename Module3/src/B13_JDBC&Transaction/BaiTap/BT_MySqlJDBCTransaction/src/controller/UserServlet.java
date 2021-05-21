@@ -14,12 +14,8 @@ import java.util.List;
 
 @WebServlet(name = "UserServlet", urlPatterns = "/users")
 public class UserServlet extends HttpServlet {
-    private static final long serialVersionUID = 1L;
-    private RepositoryImpl userService;
 
-    public void init() {
-        userService = new RepositoryImpl();
-    }
+    private RepositoryImpl userService = new RepositoryImpl();
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -90,7 +86,7 @@ public class UserServlet extends HttpServlet {
     }
 
     private void insertUser(HttpServletRequest request, HttpServletResponse response)
-            throws SQLException, IOException, ServletException {
+            throws IOException, ServletException {
         String name = request.getParameter("name");
         String email = request.getParameter("email");
         String country = request.getParameter("country");

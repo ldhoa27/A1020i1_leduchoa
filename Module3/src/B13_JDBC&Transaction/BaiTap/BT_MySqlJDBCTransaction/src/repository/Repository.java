@@ -20,5 +20,5 @@ public interface Repository {
     boolean updateUserStore(User user) throws SQLException;
     User getUserById(int id) throws SQLException;
     void insertUserStore(User user) throws SQLException;
-    void addUserTransaction(User user) throws SQLException;
+    void addUserTransaction(User user, int[] permision) throws SQLException;
 }
